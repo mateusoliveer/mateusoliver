@@ -30,12 +30,37 @@ footer{background:var(--ink);color:#fff;padding:7vw 4vw 30px}footer h2{font-size
 .campaign h3{font-size:clamp(28px,3vw,52px);line-height:.9;letter-spacing:-.05em;margin:0;position:relative;z-index:2;max-width:75%}
 .campaign-note{margin-top:22px;display:flex;justify-content:space-between;gap:25px;align-items:center;font-size:13px;font-weight:700}
 @media(max-width:850px){.campaign-grid{grid-template-columns:1fr;grid-template-rows:none}.campaign,.campaign:first-child,.campaign:nth-child(4){grid-column:auto;grid-row:auto;min-height:390px}.campaign-note{align-items:flex-start;flex-direction:column}}
+
+/* abertura editorial */
+body>header{position:absolute;top:0;left:0;right:0;background:transparent;color:#fff;border-color:rgba(255,255,255,.25);backdrop-filter:none}
+body>header .talk{border:1px solid #fff;border-radius:999px;background:transparent}
+.opening{min-height:100vh;display:grid;grid-template-columns:58% 42%;border-bottom:2px solid var(--ink);overflow:hidden}
+.opening-copy{background:#06785f;color:#fff;padding:150px 5vw 70px;display:flex;flex-direction:column;justify-content:center;position:relative}
+.opening-copy:after{content:"";position:absolute;inset:0;opacity:.11;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:5px 5px;pointer-events:none}
+.opening-copy>*{position:relative;z-index:1}.opening-copy .eyebrow{margin-bottom:28px}
+.opening-copy h1{font-family:Georgia,serif;font-size:clamp(64px,8vw,132px);font-weight:400;line-height:.82;letter-spacing:-.065em;margin:0}
+.opening-copy h1 em{display:block;color:#f5c647;font-weight:400}
+.opening-bottom{display:flex;align-items:center;gap:35px;margin-top:48px}
+.opening-bottom p{max-width:390px;line-height:1.5;font-size:14px}
+.opening-bottom a{background:#111;color:#fff;padding:16px 24px;border-radius:999px;text-decoration:none;font-weight:800;white-space:nowrap}
+.opening-art{background:#c9eee4;position:relative;display:grid;place-items:center;padding:110px 4vw 50px}
+.opening-art:before{content:"";position:absolute;width:92%;aspect-ratio:1;border-radius:50%;background:#f5c647;right:-20%;top:11%}
+.editorial-card{position:relative;width:min(480px,82%);aspect-ratio:.72;background:#8bcfc6;border:8px solid #f9f1df;box-shadow:16px 16px 0 #111;transform:rotate(3deg);padding:42px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.editorial-card:after{content:"";position:absolute;width:190px;height:260px;background:#ee554a;border-radius:60% 40% 45% 55%;right:-35px;bottom:-40px;transform:rotate(-12deg);border:2px solid #111}
+.editorial-card .poster-copy{font-family:Georgia,serif;font-size:clamp(42px,4vw,72px);line-height:.87;letter-spacing:-.05em;position:relative;z-index:2}
+.editorial-card .poster-copy em{color:#e83227;font-style:normal;display:block}
+.editorial-card .poster-foot{font-weight:900;line-height:1.1;text-transform:uppercase;position:relative;z-index:2}
+.editorial-card .poster-dot{position:absolute;width:100px;height:100px;border-radius:50%;background:#f5c647;border:2px solid #111;right:20px;top:50%;z-index:1}
+.opening-metric{position:absolute;right:2vw;top:36%;font-family:Georgia,serif;font-weight:900;font-size:30px;transform:rotate(6deg)}
+.opening-metric small{display:block;font-family:Arial,sans-serif;font-size:9px;letter-spacing:.15em;text-transform:uppercase;margin-top:18px}
+.opening-place{position:absolute;right:2vw;bottom:2vw;text-transform:uppercase;letter-spacing:.14em;font-size:9px;font-weight:900}
+@media(max-width:850px){body>header{position:absolute}.opening{grid-template-columns:1fr}.opening-copy{min-height:680px;padding-top:125px}.opening-art{min-height:720px}.opening-bottom{align-items:flex-start;flex-direction:column}.editorial-card{width:78%;padding:28px}.opening-metric{right:15px}}
 </style>
 </head>
 <body>
 <header><a class="logo" href="#inicio">MO<sup>®</sup></a><nav><a href="#resultados">Resultados</a><a href="#cases">Cases</a><a href="#campanhas">Campanhas</a><a href="#provas">Provas</a><a class="talk" href="mailto:olivercorporativo90@gmail.com">Conversar ↗</a></nav></header>
 <main>
-<section class="hero" id="inicio"><div class="hero-copy"><div class="eyebrow">Growth Marketing · Produto · Demanda</div><h1>Crescer<br><em>com método.</em></h1><div class="hero-bottom"><p>Estratégia para negócios que buscam diferenciação, aquisição e receita sustentável.</p><a class="btn" href="#resultados">Explorar <span>↓</span></a></div></div><div class="hero-art"><div class="orbit"></div><div class="gridface"><strong>GROWTH<br>IS A<br>SYSTEM.</strong></div><div class="stamp">+8.233%<span>receita</span></div></div></section>
+<section class="opening" id="inicio"><div class="opening-copy"><div class="eyebrow">Growth Marketing · Produto · Demanda</div><h1>Crescimento<em>é construção,</em>não acaso.</h1><div class="opening-bottom"><p>Estratégia de receita e diferenciação para marcas que querem ocupar um lugar próprio no mercado.</p><a href="#resultados">Ver resultados ↓</a></div></div><div class="opening-art"><article class="editorial-card"><div class="poster-copy">Marca forte<em>não precisa</em>gritar.</div><div class="poster-dot"></div><div class="poster-foot">Marketing<br>Mateus Oliver<br>Growth</div></article><div class="opening-metric">+8.233%<small>crescimento de receita</small></div><div class="opening-place">Brasil · Remoto</div></div></section>
 <section class="section" id="resultados"><div class="heading"><div class="eyebrow">Resultados mensuráveis</div><h2>Estratégia que vira <em>movimento.</em></h2></div><div class="numbers"><article class="number"><strong>+8.233%</strong><b>Receita</b><small>Estrutura de crescimento B2B</small></article><article class="number"><strong>69%</strong><b>Retenção</b><small>Relacionamento estruturado</small></article><article class="number"><strong>+1.200%</strong><b>Orgânico</b><small>Evolução em 18 meses</small></article><article class="number"><strong>−53%</strong><b>Tempo</b><small>Produto e operação</small></article></div>
 <div class="system"><div><div class="eyebrow">Como funciona</div><h3>Uma operação conectada.</h3></div><div class="steps"><div class="step"><span>01</span><div><strong>Diagnóstico</strong><p>Identificação dos gargalos que limitam aquisição, produto e receita.</p></div></div><div class="step"><span>02</span><div><strong>Prioridade</strong><p>Foco nas alavancas com maior impacto e menor desperdício.</p></div></div><div class="step"><span>03</span><div><strong>Execução</strong><p>Canais e operação trabalhando como um único sistema.</p></div></div><div class="step"><span>04</span><div><strong>Aprendizado</strong><p>Dados orientando cada próximo movimento.</p></div></div></div></div></section>
 <section class="play"><div class="play-wrap"><div><div class="eyebrow">Growth interativo</div><h2>Libere o caminho.</h2><p>Remova os quatro bloqueios para o cliente chegar à compra.</p><div class="lesson"><span class="eyebrow">Etapa 1 de 4</span><strong>Público</strong><p>Comece por quem realmente precisa da oferta.</p></div></div><div class="board"><div class="track"><div class="road"></div><span class="player">●</span><button class="obstacle o1">Público</button><button class="obstacle o2" disabled>Busca</button><button class="obstacle o3" disabled>Compra</button><button class="obstacle o4" disabled>Retenção</button></div><div class="bar"><i></i></div><div class="progress"><span>0% LIBERADO</span></div></div></div></section>
