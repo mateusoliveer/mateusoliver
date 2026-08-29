@@ -28,3 +28,8 @@
 .gallery.logo-section figure{box-shadow:5px 5px 0 var(--cobalt)}
 .campaign-thumb.cintas-cover{background:#fff}
 @media(max-width:850px){.story-grid.three-up{grid-template-columns:1fr}.hero-visual img.brand-mark{width:min(340px,78%);max-height:240px}}
+
+/* M2W */
+.campaign-thumb.m2w-cover img{object-position:center 42%}
+.hero-visual img.m2w-poster{object-fit:contain;background:#2a123b;padding:0}
+.gallery img.m2w-logo{padding:0;object-fit:cover;object-position:center}
