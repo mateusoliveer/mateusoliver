@@ -33,3 +33,9 @@
 .campaign-thumb.m2w-cover img{object-position:center 42%}
 .hero-visual img.m2w-poster{object-fit:contain;background:#2a123b;padding:0}
 .gallery img.m2w-logo{padding:0;object-fit:cover;object-position:center}
+
+/* Case de marcas */
+.hero-visual img.ifood-poster{object-fit:contain;background:#fff;padding:5%}
+.gallery.brand-gallery-section{background:linear-gradient(135deg,#eef9ed,#f7e7ac)}
+.gallery-grid.brand-gallery{grid-template-columns:1fr}
+.gallery-grid.brand-gallery img{width:100%;height:auto;min-height:0;max-height:none;object-fit:contain;background:#fff}
