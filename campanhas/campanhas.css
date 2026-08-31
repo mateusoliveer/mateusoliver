@@ -60,3 +60,13 @@
 .case-brand-names span{font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:#0d513c}.case-brand-names span:not(:last-child):after{content:"·";margin-left:22px;color:#c29118}
 @media(max-width:850px){.brand-case-hero{width:min(390px,82%)}.case-brand-main{grid-template-columns:repeat(2,minmax(0,1fr))}.case-brand-card{height:145px}.case-brand-card:first-child{grid-column:span 2}.case-brand-card:first-child .brand-vector{width:80%}}
 @media(max-width:520px){.case-brand-wall{padding:12px}.case-brand-card{height:124px;border-radius:14px}.case-brand-card .brand-vector{width:92%;height:75%}.case-brand-card:first-child .brand-vector{width:90%}.case-brand-names{gap:9px 14px}.case-brand-names span:not(:last-child):after{margin-left:14px}}
+
+/* Original brand assets: identical cards and 900x400 transparent canvases */
+.case-brand-main{grid-template-columns:repeat(3,minmax(0,1fr))}
+.case-brand-card,.case-brand-card:first-child{grid-column:auto}
+.case-brand-card .brand-original,.case-brand-card:first-child .brand-original{display:block;width:100%;height:100%;object-fit:contain}
+.case-brand-card.ayo-card{background:#103b72;border-color:#103b72}
+.case-brand-card.rigf-card{background:#0d513c;border-color:#0d513c}
+.case-brand-card.m2w-card,.case-brand-card.motum-card,.case-brand-card.mundo-card{background:#fff}
+@media(max-width:850px){.case-brand-main{grid-template-columns:repeat(2,minmax(0,1fr))}.case-brand-card:first-child{grid-column:auto}}
+@media(max-width:520px){.case-brand-card .brand-original,.case-brand-card:first-child .brand-original{width:100%;height:100%}}
