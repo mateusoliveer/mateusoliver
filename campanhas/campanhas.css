@@ -35,7 +35,28 @@
 .gallery img.m2w-logo{padding:0;object-fit:cover;object-position:center}
 
 /* Case de marcas */
-.hero-visual img.ifood-poster{object-fit:contain;background:#fff;padding:5%}
+.brand-case-hero{position:relative;z-index:2;width:min(470px,84%);aspect-ratio:1;display:grid;place-content:center;text-align:center;border:4px solid #fff;border-radius:32px;background:linear-gradient(135deg,#e4f4dc,#f5d66f);box-shadow:14px 14px 0 var(--deep);color:#0d513c}
+.brand-case-hero:before{content:"";position:absolute;inset:8%;border:2px solid #0d513c;border-radius:24px;opacity:.25}
+.brand-case-hero small,.brand-case-hero b,.brand-case-hero strong{position:relative;z-index:1;display:block}
+.brand-case-hero small{font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+.brand-case-hero strong{margin:20px 0 10px;font-size:clamp(78px,10vw,138px);line-height:.72;letter-spacing:-.09em}
+.brand-case-hero b{font-size:11px;letter-spacing:.16em;text-transform:uppercase}
 .gallery.brand-gallery-section{background:linear-gradient(135deg,#eef9ed,#f7e7ac)}
-.gallery-grid.brand-gallery{grid-template-columns:1fr}
-.gallery-grid.brand-gallery img{width:100%;height:auto;min-height:0;max-height:none;object-fit:contain;background:#fff}
+.case-brand-wall{padding:20px;border:2px solid var(--ink);border-radius:24px;background:#fffdf7;box-shadow:8px 8px 0 var(--cobalt)}
+.case-brand-main{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.case-brand-card{position:relative;height:168px;display:grid;place-items:center;overflow:hidden;border:2px solid #0d513c;border-radius:18px;background:#fff;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
+.case-brand-card:first-child{grid-column:span 2}.case-brand-card:hover,.case-brand-card:focus-visible{transform:translateY(-4px);box-shadow:6px 6px 0 #d7aa31;outline:3px solid #fff;outline-offset:2px}
+.case-brand-card .brand-rank{position:absolute;top:11px;left:12px;font-size:8px;font-weight:900;letter-spacing:.12em;color:#9a6800}
+.case-brand-card .brand-vector{width:84%;height:72%;overflow:visible}.case-brand-card:first-child .brand-vector{width:72%}
+.case-brand-card .brand-vector text{font-family:Arial,Helvetica,sans-serif;font-weight:900}
+.case-brand-card.ayo-card{background:#103b72;border-color:#103b72}.case-brand-card.ayo-card .brand-rank{color:#f5ca43}.ayo-vector .ayo-ring{fill:none;stroke:#f5ca43;stroke-width:7}.ayo-vector .ayo-word{fill:#fffaf0;font-size:74px;letter-spacing:-7px}.ayo-vector .ayo-tag{fill:#bce6dc;font-size:10px;letter-spacing:4px}
+.case-brand-card.hibino-card{background:#eef8e9}.hibino-vector .hibino-word{fill:#0d513c;font-size:56px;letter-spacing:-3px}.hibino-vector tspan{fill:#c29118}
+.case-brand-card.frutos-card{background:#dff3d6}.frutos-vector .fruit{fill:#f5ca43;stroke:#0d513c;stroke-width:3}.frutos-vector .leaf{fill:#0d7a54}.frutos-vector .frutos-main{fill:#0d513c;font-size:32px;letter-spacing:-1px}.frutos-vector .frutos-sub{fill:#9a6800;font-size:15px;letter-spacing:3px}
+.case-brand-card.m2w-card{background:#102f5e;border-color:#102f5e}.case-brand-card.m2w-card .brand-rank{color:#f5ca43}.m2w-vector .m2w-main{fill:#fffaf0;font-size:64px;letter-spacing:-5px}.m2w-vector .m2w-tag{fill:#f5ca43;font-size:10px;letter-spacing:4px}.m2w-vector .m2w-line{stroke:#8fd1eb;stroke-width:6;stroke-linecap:round}
+.case-brand-card.motum-card{background:#f7f4ea}.motum-vector .motum-main{fill:#153b78;font-size:48px;letter-spacing:-3px}.motum-vector .motum-tag{fill:#0d7a54;font-size:10px;letter-spacing:3px}.motum-vector .motum-route{fill:none;stroke:#c29118;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+.case-brand-card.rigf-card{background:#fff6d8}.rigf-vector .rigf-main{font-family:Georgia,serif;font-size:54px;font-weight:400;font-style:italic;letter-spacing:-3px;fill:#0d513c}.rigf-vector .rigf-tag{fill:#9a6800;font-size:10px;letter-spacing:3px}
+.case-brand-card.mundo-card{background:#f3e7f1}.mundo-vector .mundo-panel{fill:#70235f}.mundo-vector .mundo-star{fill:#f5ca43}.mundo-vector .mundo-main{fill:#fff;font-family:Georgia,serif;font-size:20px;font-weight:700}.mundo-vector .mundo-tag{fill:#0d513c;font-size:10px;letter-spacing:3px}
+.case-brand-names{margin-top:20px;padding:20px 4px 4px;border-top:1px solid rgba(13,81,60,.3);display:flex;flex-wrap:wrap;gap:10px 22px}
+.case-brand-names span{font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:#0d513c}.case-brand-names span:not(:last-child):after{content:"·";margin-left:22px;color:#c29118}
+@media(max-width:850px){.brand-case-hero{width:min(390px,82%)}.case-brand-main{grid-template-columns:repeat(2,minmax(0,1fr))}.case-brand-card{height:145px}.case-brand-card:first-child{grid-column:span 2}.case-brand-card:first-child .brand-vector{width:80%}}
+@media(max-width:520px){.case-brand-wall{padding:12px}.case-brand-card{height:124px;border-radius:14px}.case-brand-card .brand-vector{width:92%;height:75%}.case-brand-card:first-child .brand-vector{width:90%}.case-brand-names{gap:9px 14px}.case-brand-names span:not(:last-child):after{margin-left:14px}}
