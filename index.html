@@ -452,6 +452,22 @@ linear-gradient(135deg,#c9f7d8 0%,#8fe6ba 42%,#d8f4a7 72%,#f6d98b 100%);color:#0
 @media(max-width:700px){.numbers{grid-template-columns:1fr}.numbers .number{min-height:165px}}
 @media(prefers-reduced-motion:reduce){.number,.niche-card,.step{transition:none!important}}
 
+
+/* FAQ claro: cartões redondos e roxo com contraste */
+.faq{background:linear-gradient(135deg,#fffdf7 0%,#edf8ee 54%,#f4efff 100%)}
+.faq-grid{display:grid;gap:14px;border:0;background:transparent}
+.faq details,.faq details:last-child{overflow:hidden;border:2px solid var(--ink);border-radius:24px;box-shadow:5px 5px 0 rgba(13,81,60,.18);transition:transform .22s ease,box-shadow .22s ease}
+.faq details:nth-child(1){background:linear-gradient(135deg,#fffaf0,#fff1bd)}
+.faq details:nth-child(2){background:linear-gradient(135deg,#effcf2,#c9efd7)}
+.faq details:nth-child(3){background:linear-gradient(135deg,#f8f4ff,#e7ddff)}
+.faq details:hover,.faq details[open]{transform:translateY(-3px);box-shadow:7px 8px 0 rgba(117,92,243,.28)}
+.faq summary:after{color:#755cf3}
+.faq-cta{border-radius:26px;background:linear-gradient(135deg,#f2ebff 0%,#e6f7eb 58%,#fff0b8 100%);color:var(--ink);box-shadow:6px 6px 0 rgba(13,81,60,.2)}
+.faq-cta a{border:2px solid #755cf3;border-radius:999px;background:#755cf3;color:#fff;box-shadow:4px 4px 0 var(--ink);transition:transform .2s ease,box-shadow .2s ease}
+.faq-cta a:hover,.faq-cta a:focus-visible{transform:translateY(-2px);box-shadow:6px 7px 0 var(--ink)}
+@media(max-width:560px){.faq-grid{gap:11px}.faq details,.faq details:last-child{border-radius:19px}.faq-cta{border-radius:21px;padding:22px}}
+@media(prefers-reduced-motion:reduce){.faq details,.faq-cta a{transition:none}.faq details:hover,.faq details[open],.faq-cta a:hover{transform:none}}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mateus Oliver","url":"https://mateusoliveer.github.io/mateusoliver/","jobTitle":"Consultor de Growth Marketing","description":"Consultoria de Growth Marketing, diferenciação de marca, aquisição, produto e retenção para empresas, franquias e negócios B2B.","sameAs":["https://www.linkedin.com/in/mateusoliveer"],"knowsAbout":["Growth Marketing","Diferenciação de marca","Marketing B2B","Marketing para franquias","Aquisição de clientes","Retenção de clientes","Produto digital"]}</script></head>
 <body>
