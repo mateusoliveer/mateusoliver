@@ -2,47 +2,97 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>SEO Local + Google Maps | R$497</title>
-  <meta name="description" content="SEO Local e otimização do Google Maps por R$497. Melhore sua presença nas buscas locais e facilite que clientes encontrem sua empresa." />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="SEO Local e otimização do Google Maps por R$497. Aumente suas chances de aparecer quando clientes buscarem pelo seu serviço na sua região." />
+  <meta name="theme-color" content="#f7fff9" />
+  <meta property="og:title" content="SEO Local + Google Maps por R$497" />
+  <meta property="og:description" content="Melhore sua presença no Google e no Google Maps com uma otimização local objetiva." />
   <style>
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fff;color:#10251a}
-    .wrap{min-height:100vh;display:grid;place-items:center;padding:28px 18px;background:radial-gradient(circle at 50% 12%,#effff4 0,#fff 42%)}
-    .card{width:min(760px,100%);text-align:center;padding:34px 22px 38px}
-    .brand{display:inline-flex;align-items:center;gap:12px;margin-bottom:30px;color:#16884f;font-weight:800;letter-spacing:.16em;font-size:14px}
-    .mark{position:relative;width:48px;height:48px;display:grid;place-items:center;font-weight:900;font-size:22px;color:#16884f}
-    .mark:before,.mark:after{content:"";position:absolute;width:44px;height:20px;border:4px solid #2d9f60;border-radius:50%;transform:rotate(35deg)}
+    :root{--green:#16884f;--green2:#2d9f60;--dark:#10251a;--muted:#54665a;--line:#dfeae3;--soft:#eef9f2}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fff;color:var(--dark);overflow-x:hidden}
+    a{-webkit-tap-highlight-color:transparent}
+    .page{min-height:100svh;background:radial-gradient(circle at 18% 10%,#eafff0 0,transparent 34%),linear-gradient(180deg,#fbfffc 0%,#fff 70%)}
+    .shell{width:min(1180px,100%);min-height:100svh;margin:0 auto;padding:34px 34px 28px;display:grid;grid-template-rows:auto 1fr auto}
+    .top{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:inline-flex;align-items:center;gap:11px;color:var(--green);font-weight:850;letter-spacing:.14em;font-size:13px}
+    .mark{position:relative;width:44px;height:44px;display:grid;place-items:center;font-weight:900;font-size:20px;color:var(--green)}
+    .mark:before,.mark:after{content:"";position:absolute;width:40px;height:18px;border:3.5px solid var(--green2);border-radius:50%;transform:rotate(35deg)}
     .mark:after{transform:rotate(-35deg)}
-    .eyebrow{display:inline-block;padding:8px 13px;border-radius:999px;background:#ecf9f0;color:#167b49;font-size:13px;font-weight:800;margin-bottom:18px}
-    h1{font-size:clamp(38px,8vw,70px);line-height:.98;letter-spacing:-.055em;margin:0 auto 18px;max-width:700px}
-    h1 span{color:#16884f}
-    .sub{font-size:clamp(17px,2.3vw,21px);line-height:1.5;color:#4b5f53;max-width:620px;margin:0 auto 25px}
-    .price{display:flex;justify-content:center;align-items:end;gap:7px;margin:22px 0 26px}
-    .price small{font-size:15px;color:#66766c;margin-bottom:9px}.price strong{font-size:54px;line-height:1;color:#10251a;letter-spacing:-.05em}
-    .benefits{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 auto 30px;max-width:650px}
-    .benefits span{border:1px solid #dce9e1;border-radius:999px;padding:9px 13px;font-size:14px;background:#fff}
-    .cta{display:inline-flex;justify-content:center;align-items:center;gap:10px;width:min(430px,100%);padding:17px 20px;border-radius:14px;background:#16884f;color:#fff;text-decoration:none;font-size:17px;font-weight:850;box-shadow:0 12px 30px rgba(22,136,79,.18);transition:.2s transform,.2s box-shadow}
-    .cta:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(22,136,79,.24)}
-    .note{font-size:12px;color:#7b8980;margin-top:14px}
-    @media(max-width:520px){.card{padding-top:18px}.brand{margin-bottom:22px}.price strong{font-size:47px}.benefits{gap:8px}.benefits span{font-size:13px;padding:8px 10px}}
+    .mini{font-size:13px;color:#6b7b70}
+    .hero{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(330px,.88fr);align-items:center;gap:68px;padding:62px 0 48px}
+    .copy{max-width:720px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid #d4ebdc;border-radius:999px;background:var(--soft);color:#127341;font-size:12px;font-weight:850;letter-spacing:.04em;margin-bottom:20px}
+    .eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green)}
+    h1{font-size:clamp(52px,6vw,82px);line-height:.95;letter-spacing:-.06em;margin:0 0 22px;max-width:760px}
+    h1 span{color:var(--green)}
+    .sub{font-size:clamp(18px,1.8vw,21px);line-height:1.5;color:var(--muted);max-width:650px;margin:0 0 28px}
+    .ctaRow{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .cta{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:14px;background:var(--green);color:#fff;text-decoration:none;font-size:16px;font-weight:850;box-shadow:0 14px 32px rgba(22,136,79,.18);transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+    .cta:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(22,136,79,.24);background:#117944}
+    .direct{font-size:13px;color:#718077}
+    .offer{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:0 22px 70px rgba(22,74,45,.08);backdrop-filter:blur(10px)}
+    .offerTop{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+    .offerTop strong{font-size:15px}.tag{font-size:11px;font-weight:850;color:var(--green);background:var(--soft);padding:7px 9px;border-radius:999px}
+    .priceLabel{font-size:13px;color:#728079;margin-bottom:5px}.price{font-size:62px;font-weight:900;letter-spacing:-.065em;line-height:1;margin:0 0 22px}.price small{font-size:16px;font-weight:750;letter-spacing:0;color:#68766d}
+    .benefits{display:grid;gap:10px;margin-bottom:24px}
+    .benefit{display:flex;align-items:center;gap:10px;padding:12px 13px;border:1px solid #e6eee9;border-radius:13px;background:#fff;font-size:14px;font-weight:700}
+    .check{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--green);font-size:13px;font-weight:900;flex:0 0 auto}
+    .offer .cta{width:100%}
+    .footer{display:flex;justify-content:space-between;gap:18px;align-items:center;padding-top:18px;border-top:1px solid #edf1ee;color:#829087;font-size:12px}
+    .floating{display:none}
+    @media(max-width:900px){
+      .shell{padding:24px 22px 24px}.hero{grid-template-columns:1fr;gap:34px;padding:42px 0 34px}.copy{max-width:780px}.offer{max-width:680px;width:100%;margin:0 auto}h1{font-size:clamp(46px,9vw,70px)}
+    }
+    @media(max-width:600px){
+      body{padding-bottom:84px}.shell{padding:18px 16px 20px;min-height:auto}.top{align-items:flex-start}.brand{font-size:11px;gap:8px}.mark{width:38px;height:38px;font-size:17px}.mark:before,.mark:after{width:34px;height:15px;border-width:3px}.mini{display:none}
+      .hero{padding:28px 0 22px;gap:28px}.eyebrow{font-size:11px;margin-bottom:16px;padding:7px 10px}h1{font-size:clamp(39px,12vw,56px);line-height:.97;margin-bottom:17px;letter-spacing:-.055em}.sub{font-size:16px;line-height:1.45;margin-bottom:22px}
+      .ctaRow .cta{width:100%;min-height:54px}.direct{width:100%;text-align:center}
+      .offer{padding:22px 18px;border-radius:22px}.price{font-size:50px}.benefit{font-size:13px;padding:11px}.offer .cta{display:none}.footer{justify-content:center;text-align:center;padding-top:14px}.footer span:last-child{display:none}
+      .floating{position:fixed;z-index:50;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:center;min-height:58px;padding:0 18px;border-radius:16px;background:var(--green);color:#fff;text-decoration:none;font-size:15px;font-weight:900;box-shadow:0 14px 34px rgba(16,73,43,.28)}
+    }
+    @media(max-width:370px){h1{font-size:36px}.price{font-size:46px}.offer{padding:20px 15px}.brand span:last-child{letter-spacing:.1em}}
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <section class="card">
-      <div class="brand"><span class="mark">N</span><span>NANO VENDAS</span></div>
-      <div class="eyebrow">SEO LOCAL + GOOGLE MAPS</div>
-      <h1>Seja encontrado por quem já está <span>procurando.</span></h1>
-      <p class="sub">Otimizamos sua presença local para aumentar suas chances de aparecer no Google e no Google Maps quando clientes buscarem pelo seu serviço.</p>
-      <div class="price"><small>investimento</small><strong>R$497</strong></div>
-      <div class="benefits">
-        <span>Google Maps</span><span>Perfil da Empresa</span><span>SEO Local</span><span>Otimizações de busca</span>
-      </div>
-      <a class="cta" href="https://wa.me/5521971349413?text=Ol%C3%A1%2C%20vi%20o%20an%C3%BAncio%20de%20SEO%20Local%2FGoogle%20Maps%20por%20R%24497%20e%20quero%20saber%20como%20funciona." target="_blank" rel="noopener">Quero melhorar minha presença no Google →</a>
-      <p class="note">Atendimento direto pelo WhatsApp.</p>
-    </section>
-  </main>
+  <div class="page">
+    <main class="shell">
+      <header class="top">
+        <div class="brand"><span class="mark">N</span><span>NANO VENDAS</span></div>
+        <div class="mini">Otimização local para empresas</div>
+      </header>
+
+      <section class="hero">
+        <div class="copy">
+          <div class="eyebrow">SEO LOCAL + GOOGLE MAPS</div>
+          <h1>Seja encontrado por quem já está <span>procurando.</span></h1>
+          <p class="sub">Melhore sua presença no Google e no Google Maps para aumentar suas chances de aparecer quando clientes buscarem pelo seu serviço na sua região.</p>
+          <div class="ctaRow">
+            <a class="cta" href="https://wa.me/5521971349413?text=Ol%C3%A1%2C%20vi%20o%20an%C3%BAncio%20de%20SEO%20Local%2FGoogle%20Maps%20por%20R%24497%20e%20quero%20saber%20como%20funciona." target="_blank" rel="noopener">Quero aparecer melhor no Google →</a>
+            <span class="direct">Atendimento direto pelo WhatsApp.</span>
+          </div>
+        </div>
+
+        <aside class="offer" aria-label="Oferta SEO Local">
+          <div class="offerTop"><strong>Otimização Local</strong><span class="tag">PAGAMENTO ÚNICO</span></div>
+          <div class="priceLabel">Investimento</div>
+          <div class="price">R$497 <small>à vista</small></div>
+          <div class="benefits">
+            <div class="benefit"><span class="check">✓</span>Google Maps</div>
+            <div class="benefit"><span class="check">✓</span>Perfil da Empresa no Google</div>
+            <div class="benefit"><span class="check">✓</span>SEO Local</div>
+            <div class="benefit"><span class="check">✓</span>Otimizações para buscas locais</div>
+          </div>
+          <a class="cta" href="https://wa.me/5521971349413?text=Ol%C3%A1%2C%20vi%20o%20an%C3%BAncio%20de%20SEO%20Local%2FGoogle%20Maps%20por%20R%24497%20e%20quero%20saber%20como%20funciona." target="_blank" rel="noopener">Falar no WhatsApp →</a>
+        </aside>
+      </section>
+
+      <footer class="footer"><span>© Nano Vendas</span><span>SEO Local • Google Maps</span></footer>
+    </main>
+  </div>
+
+  <a class="floating" href="https://wa.me/5521971349413?text=Ol%C3%A1%2C%20vi%20o%20an%C3%BAncio%20de%20SEO%20Local%2FGoogle%20Maps%20por%20R%24497%20e%20quero%20saber%20como%20funciona." target="_blank" rel="noopener">Falar no WhatsApp • R$497</a>
 </body>
 </html>
