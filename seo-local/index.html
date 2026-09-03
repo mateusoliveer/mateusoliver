@@ -19,7 +19,7 @@
   </script>
 
   <style>
-    :root{--green:#16884f;--green2:#2d9f60;--dark:#10251a;--muted:#53665a;--line:#dfeae3;--soft:#eef9f2;--white:#fff}
+    :root{--green:#16884f;--green2:#2d9f60;--dark:#10251a;--muted:#53665a;--line:#dfeae3;--soft:#eef9f2;--wa:#25D366;--wa2:#1ebe5d}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
     body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fff;color:var(--dark);overflow-x:hidden}
@@ -48,14 +48,15 @@
     .benefits{display:grid;gap:10px}
     .benefit{display:flex;align-items:flex-start;gap:10px;padding:12px 13px;border:1px solid #e6eee9;border-radius:13px;background:#fff;font-size:14px;font-weight:720;line-height:1.35}
     .check{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--green);font-size:13px;font-weight:900;flex:0 0 auto;margin-top:1px}
-    .ctaWrap{grid-column:1/-1;margin-top:8px}
-    .cta{display:flex;align-items:center;justify-content:center;width:100%;min-height:78px;padding:18px 28px;border-radius:18px;background:linear-gradient(135deg,#188c53,#0f6f3f);color:#fff;text-decoration:none;text-align:center;font-size:clamp(19px,2vw,24px);font-weight:950;letter-spacing:-.02em;box-shadow:0 18px 42px rgba(22,136,79,.28);transition:transform .18s ease,box-shadow .18s ease}
-    .cta:hover{transform:translateY(-2px);box-shadow:0 22px 50px rgba(22,136,79,.34)}
-    .ctaSub{text-align:center;margin:10px 0 0;color:#75837a;font-size:12px}
+    .ctaWrap{grid-column:1/-1;margin-top:8px;display:flex;flex-direction:column;align-items:center}
+    .cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;width:min(620px,100%);min-height:62px;padding:14px 22px;border:1px solid rgba(0,0,0,.04);border-radius:16px;background:linear-gradient(135deg,var(--wa),var(--wa2));color:#fff;text-decoration:none;text-align:center;font-size:clamp(17px,1.5vw,20px);font-weight:950;letter-spacing:-.02em;box-shadow:0 14px 34px rgba(37,211,102,.28);transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+    .cta:hover{transform:translateY(-2px) scale(1.01);box-shadow:0 18px 42px rgba(37,211,102,.36);filter:saturate(1.05)}
+    .waIcon{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--wa2);font-size:17px;font-weight:950;flex:0 0 auto;box-shadow:0 3px 10px rgba(0,0,0,.08)}
+    .ctaSub{text-align:center;margin:9px 0 0;color:#6f7e75;font-size:12px;font-weight:650}
     .footer{display:flex;justify-content:space-between;gap:18px;align-items:center;padding-top:18px;border-top:1px solid #edf1ee;color:#829087;font-size:12px}
     @media(max-width:900px){.shell{padding:22px 20px}.hero{grid-template-columns:1fr;gap:30px;padding:38px 0 28px}.copy{max-width:800px}.offer{max-width:720px;width:100%;margin:0 auto}.ctaWrap{margin-top:0}h1{font-size:clamp(44px,8vw,66px)}}
-    @media(max-width:600px){.shell{padding:17px 15px 20px;min-height:auto}.mini{display:none}.brand{font-size:11px;gap:8px}.mark{width:38px;height:38px;font-size:17px}.mark:before,.mark:after{width:34px;height:15px;border-width:3px}.hero{padding:26px 0 22px;gap:25px}.eyebrow{font-size:10.5px;padding:7px 10px;margin-bottom:15px}h1{font-size:clamp(38px,11.8vw,53px);line-height:.98;margin-bottom:16px}.sub{font-size:16px;line-height:1.45;margin-bottom:18px}.proof{gap:7px;margin-bottom:4px}.proof span{font-size:12px;padding:8px 10px}.offer{padding:21px 17px;border-radius:22px}.price{font-size:50px}.benefit{font-size:13px;padding:10px 11px}.cta{min-height:68px;border-radius:16px;font-size:18px;padding:16px 18px}.footer{justify-content:center;text-align:center}.footer span:last-child{display:none}}
-    @media(max-width:370px){h1{font-size:35px}.price{font-size:46px}.offer{padding:19px 14px}.cta{font-size:17px}}
+    @media(max-width:600px){.shell{padding:17px 15px 20px;min-height:auto}.mini{display:none}.brand{font-size:11px;gap:8px}.mark{width:38px;height:38px;font-size:17px}.mark:before,.mark:after{width:34px;height:15px;border-width:3px}.hero{padding:26px 0 22px;gap:25px}.eyebrow{font-size:10.5px;padding:7px 10px;margin-bottom:15px}h1{font-size:clamp(38px,11.8vw,53px);line-height:.98;margin-bottom:16px}.sub{font-size:16px;line-height:1.45;margin-bottom:18px}.proof{gap:7px;margin-bottom:4px}.proof span{font-size:12px;padding:8px 10px}.offer{padding:21px 17px;border-radius:22px}.price{font-size:50px}.benefit{font-size:13px;padding:10px 11px}.cta{width:100%;min-height:60px;border-radius:15px;font-size:16.5px;padding:13px 16px;gap:10px}.waIcon{width:26px;height:26px;font-size:16px}.ctaSub{font-size:11.5px}.footer{justify-content:center;text-align:center}.footer span:last-child{display:none}}
+    @media(max-width:370px){h1{font-size:35px}.price{font-size:46px}.offer{padding:19px 14px}.cta{font-size:15.5px}}
   </style>
 </head>
 <body>
@@ -97,9 +98,10 @@
             href="https://wa.me/5521971349413?text=Ol%C3%A1%2C%20vi%20a%20oferta%20de%20SEO%20Local%20por%20R%24497."
             onclick="return registrarConversaoWhatsApp(this.href)"
           >
-            Quero ser encontrado no Google e nas buscas por IA →
+            <span class="waIcon">☎</span>
+            <span>Falar no WhatsApp e melhorar minha presença no Google</span>
           </a>
-          <p class="ctaSub">Fale agora no WhatsApp e veja como funciona a otimização.</p>
+          <p class="ctaSub">Atendimento direto pelo WhatsApp • clique para conversar</p>
         </div>
       </section>
 
