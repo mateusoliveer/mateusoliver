@@ -4,79 +4,61 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Mercadinho — Diagnóstico 2024–2026</title>
-<meta name="description" content="Diagnóstico direto do Mini Mercado do Bairro, Ponto Novo, Aracaju: vendas, margem, mercado, concorrência e caixa.">
+<meta name="description" content="Diagnóstico direto do Mini Mercado do Bairro, Ponto Novo, Aracaju: vendas, margem, crise, concorrência e caixa.">
 <style>
-:root{--ink:#17171b;--muted:#6d6c76;--paper:#fbfaf7;--line:rgba(23,23,27,.09);--purple:#7755f7;--mint:#80e3bd;--yellow:#ffe36d;--pink:#ff83b8;--sky:#8fd5ff;--coral:#ff9279;--lime:#c9f36a}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}.wrap{width:min(1060px,calc(100% - 30px));margin:auto}.hero{padding:56px 0 28px}.tag{display:inline-flex;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:clamp(46px,9vw,92px);line-height:.9;letter-spacing:-.065em;margin:20px 0 18px;max-width:930px}.grad{background:linear-gradient(90deg,var(--purple),#9d64f4,var(--pink),var(--coral));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:18px;line-height:1.55;color:var(--muted);max-width:730px;margin:0}.pills{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.pill{padding:8px 11px;border-radius:999px;font-size:12px;font-weight:700}.p1{background:#e8e1ff}.p2{background:#dff8ee}.p3{background:#fff2b6}.grid{display:grid;gap:13px}.kpis{grid-template-columns:repeat(4,1fr);margin:32px 0 64px}.card{min-height:180px;padding:22px;border-radius:24px;border:1px solid rgba(255,255,255,.45);box-shadow:0 12px 34px rgba(27,20,50,.06);display:flex;flex-direction:column;justify-content:space-between}.card small{font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.08em;opacity:.68}.card strong{font-size:34px;letter-spacing:-.055em}.purple{background:linear-gradient(145deg,#dcd1ff,#f1ecff)}.mint{background:linear-gradient(145deg,#c9f5e4,#ebfff7)}.yellow{background:linear-gradient(145deg,#ffe999,#fff8cf)}.pink{background:linear-gradient(145deg,#ffc5dc,#ffecf3)}.section{margin:0 0 72px}.section h2{font-size:clamp(32px,5vw,52px);line-height:1;letter-spacing:-.055em;margin:0 0 24px}.year{grid-template-columns:repeat(3,1fr)}.yearbox{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}.yearbox b{font-size:14px}.yearbox strong{display:block;font-size:29px;letter-spacing:-.04em;margin:10px 0 6px}.yearbox span{color:var(--muted);font-size:13px}.spark{height:10px;border-radius:999px;margin-top:18px;background:#eee;overflow:hidden}.spark i{display:block;height:100%;border-radius:inherit}.s24{width:74%;background:var(--sky)}.s25{width:100%;background:var(--purple)}.s26{width:52%;background:var(--coral)}.truth{border-radius:28px;padding:28px;background:linear-gradient(115deg,#17171b,#2b273a);color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:end}.truth .big{font-size:clamp(42px,7vw,72px);line-height:.95;letter-spacing:-.06em;font-weight:900}.truth p{margin:0;color:#d6d2dd;line-height:1.55}.market{grid-template-columns:repeat(3,1fr)}.market .m{border-radius:23px;padding:22px;min-height:190px}.market h3{font-size:21px;margin:0 0 12px;letter-spacing:-.03em}.market p{margin:0;line-height:1.5;font-size:14px;color:#3d3b44}.m1{background:var(--mint)}.m2{background:var(--yellow)}.m3{background:var(--sky)}.why{grid-template-columns:repeat(2,1fr)}.reason{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}.num{width:31px;height:31px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:900;margin-bottom:16px}.n1{background:#e7ddff}.n2{background:#fff0a8}.n3{background:#cef7e8}.n4{background:#ffd4e6}.reason h3{font-size:20px;margin:0 0 7px}.reason p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}.risk{border-radius:28px;background:linear-gradient(140deg,#ff9bbb,#ffbc87,#ffe483);padding:30px}.risk h2{margin:0 0 16px}.riskgrid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.riskitem{background:rgba(255,255,255,.72);backdrop-filter:blur(7px);border-radius:20px;padding:18px}.riskitem strong{font-size:25px;display:block;letter-spacing:-.04em}.riskitem span{font-size:13px;color:#5c4a4a}.verdict{margin-top:70px;border-top:1px solid var(--line);padding:54px 0 70px}.verdict p{font-size:clamp(30px,5vw,52px);line-height:1.07;letter-spacing:-.05em;font-weight:850;max-width:920px;margin:0}.verdict em{font-style:normal;background:linear-gradient(90deg,var(--purple),var(--pink),var(--coral));-webkit-background-clip:text;background-clip:text;color:transparent}.sources{font-size:11px;color:#85828c;padding-bottom:35px;line-height:1.65}.sources a{color:inherit}.stamp{margin-top:18px;font-size:12px;color:var(--muted)}
-@media(max-width:760px){.hero{padding-top:34px}.hero h1{font-size:50px}.kpis,.year,.market,.why,.riskgrid,.truth{grid-template-columns:1fr 1fr}.card{min-height:145px}.card strong{font-size:29px}.section{margin-bottom:54px}}
-@media(max-width:520px){.wrap{width:min(100% - 22px,1060px)}.hero h1{font-size:43px}.hero p{font-size:16px}.kpis{grid-template-columns:1fr 1fr;gap:9px;margin-bottom:50px}.card{min-height:138px;padding:17px;border-radius:19px}.card strong{font-size:25px}.year,.market,.why,.riskgrid,.truth{grid-template-columns:1fr}.yearbox{padding:18px}.truth,.risk{padding:22px;border-radius:22px}.truth .big{font-size:44px}.section h2{font-size:34px}.verdict{margin-top:48px;padding-top:40px}.verdict p{font-size:33px}}
+:root{--bg:#fffdf9;--ink:#17171b;--muted:#666874;--line:rgba(23,23,27,.08);--p1:#7b61ff;--p2:#34d399;--p3:#ffd84d;--p4:#ff7bac;--p5:#67c8ff;--p6:#ff9b6b;--p7:#b6f264}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top left,#f5eefe 0,transparent 28%),radial-gradient(circle at top right,#fff4bd 0,transparent 25%),radial-gradient(circle at 85% 50%,#e6fbf2 0,transparent 22%),var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}main{width:min(1080px,calc(100% - 28px));margin:auto;padding:36px 0 56px}.hero{padding:22px 0 20px}.tag{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.82);border:1px solid var(--line);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:clamp(46px,9vw,94px);line-height:.9;letter-spacing:-.07em;margin:18px 0 14px;max-width:940px}.grad{background:linear-gradient(90deg,var(--p1),var(--p4),var(--p6),var(--p3),var(--p2));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{margin:0;max-width:780px;font-size:18px;line-height:1.58;color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.chip{padding:9px 12px;border-radius:999px;font-size:12px;font-weight:750}.c1{background:#e8e0ff}.c2{background:#dff9ee}.c3{background:#fff3b8}.c4{background:#ffd8e8}.grid{display:grid;gap:14px}.kpis{grid-template-columns:repeat(4,1fr);margin:30px 0 58px}.card{padding:21px;border-radius:26px;box-shadow:0 12px 38px rgba(45,28,73,.07);border:1px solid rgba(255,255,255,.55)}.card small{display:block;font-size:12px;font-weight:850;letter-spacing:.08em;text-transform:uppercase;opacity:.7;margin-bottom:10px}.card strong{font-size:34px;letter-spacing:-.06em;line-height:1}.card span{display:block;margin-top:10px;color:#403d46;font-size:13px;line-height:1.45}.g1{background:linear-gradient(135deg,#dfd4ff,#f5f0ff)}.g2{background:linear-gradient(135deg,#ffc0d9,#fff0f5)}.g3{background:linear-gradient(135deg,#cbfae6,#ecfff8)}.g4{background:linear-gradient(135deg,#fff0a3,#fff9d8)}.section{margin:0 0 62px}.section h2{font-size:clamp(30px,5vw,52px);line-height:1;letter-spacing:-.055em;margin:0 0 22px}.three{grid-template-columns:repeat(3,1fr)}.year{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px}.year b{font-size:13px}.year strong{display:block;font-size:31px;letter-spacing:-.05em;margin:10px 0 6px}.year span{color:var(--muted);font-size:13px}.bar{height:11px;border-radius:999px;background:#eee;margin-top:18px;overflow:hidden}.bar i{display:block;height:100%;border-radius:inherit}.y24{width:74%;background:linear-gradient(90deg,var(--p5),#b4e4ff)}.y25{width:100%;background:linear-gradient(90deg,var(--p1),#b68dff)}.y26{width:52%;background:linear-gradient(90deg,var(--p6),#ffc39c)}.banner{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:stretch}.panel{border-radius:30px;padding:28px}.panel.dark{background:linear-gradient(135deg,#16161a,#30293e);color:#fff}.panel.dark h2{margin:0;font-size:clamp(34px,6vw,68px);line-height:.95;letter-spacing:-.06em}.panel.dark p{margin:16px 0 0;color:#dcd7e4;line-height:1.58}.panel.light{background:linear-gradient(135deg,#eefaf4,#f8feff);border:1px solid var(--line)}.stack{display:grid;gap:12px}.mini{background:rgba(255,255,255,.9);border:1px solid rgba(23,23,27,.06);border-radius:22px;padding:18px}.mini strong{font-size:26px;letter-spacing:-.04em}.mini p{margin:6px 0 0;font-size:13px;color:#4f4b58;line-height:1.45}.why{grid-template-columns:repeat(2,1fr)}.whycard{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px}.dot{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:13px;margin-bottom:16px}.d1{background:#ede6ff}.d2{background:#fff1a9}.d3{background:#daf9e9}.d4{background:#ffd5e4}.whycard h3{font-size:21px;letter-spacing:-.03em;margin:0 0 7px}.whycard p{margin:0;color:var(--muted);font-size:14px;line-height:1.58}.alert{background:linear-gradient(120deg,#ffb0c9,#ffd39c,#fff2a5,#d8f8e7,#ddecff);border-radius:30px;padding:28px}.alert h2{margin:0 0 16px}.split{display:grid;grid-template-columns:1fr 1fr;gap:14px}.item{background:rgba(255,255,255,.78);backdrop-filter:blur(10px);border-radius:22px;padding:18px;border:1px solid rgba(255,255,255,.6)}.item strong{display:block;font-size:28px;letter-spacing:-.05em}.item span{display:block;margin-top:6px;font-size:13px;color:#594f59;line-height:1.45}.finale{margin-top:58px;padding-top:38px;border-top:1px solid var(--line)}.finale p{margin:0;max-width:960px;font-size:clamp(29px,5vw,50px);letter-spacing:-.05em;line-height:1.08;font-weight:860}.finale em{font-style:normal;background:linear-gradient(90deg,var(--p1),var(--p4),var(--p6));-webkit-background-clip:text;background-clip:text;color:transparent}.sources{margin-top:26px;font-size:11px;color:#7b7882;line-height:1.65}.sources a{color:inherit}.footnote{margin-top:10px;font-size:12px;color:#6e6b75}
+@media(max-width:760px){.kpis,.three,.split,.banner,.why{grid-template-columns:1fr 1fr}.card strong{font-size:29px}.panel.dark h2{font-size:44px}}
+@media(max-width:520px){main{width:min(100% - 20px,1080px);padding-top:22px}.hero h1{font-size:44px}.hero p{font-size:16px}.kpis,.three,.split,.banner,.why{grid-template-columns:1fr}.card,.year,.whycard,.mini,.item,.panel{padding:18px;border-radius:22px}.card strong{font-size:26px}.panel.dark h2{font-size:40px}.section{margin-bottom:50px}.section h2{font-size:34px}.finale p{font-size:32px}}
 </style>
 </head>
 <body>
-<main class="wrap">
+<main>
 <section class="hero">
-<span class="tag">Ponto Novo · Aracaju · 2024 → 2026</span>
-<h1>O mercado ainda vende.<br><span class="grad">Mas perdeu volume.</span></h1>
-<p>O setor alimentar continua girando. O problema do mercadinho é mais específico: menos força comercial, consumidor mais seletivo, concorrência forte e caixa pressionado.</p>
-<div class="pills"><span class="pill p1">Rua Álvaro Nascimento, 8</span><span class="pill p2">dados reais do negócio</span><span class="pill p3">análise até ago/2026</span></div>
+<span class="tag">Mini Mercado do Bairro · Ponto Novo · Aracaju</span>
+<h1>Existe crise no Brasil.<br><span class="grad">Mas ela não explica tudo.</span></h1>
+<p>O país vive aperto: juros ainda altos, inflação incômoda e famílias mais endividadas. Isso reduz impulso e aumenta a sensibilidade a preço. Só que a queda do mercadinho foi maior do que a do setor em geral — então há pressão externa e problema interno ao mesmo tempo.</p>
+<div class="chips"><span class="chip c1">2024 → 2026</span><span class="chip c2">dados reais do negócio</span><span class="chip c3">varejo + concorrência</span><span class="chip c4">visão direta</span></div>
 </section>
 
 <section class="grid kpis">
-<div class="card purple"><small>Vendas jan–ago/26</small><strong>R$ 156,9 mil</strong></div>
-<div class="card pink"><small>vs. 2025</small><strong>−24,0%</strong></div>
-<div class="card mint"><small>Margem bruta</small><strong>26,3%</strong></div>
-<div class="card yellow"><small>Em aberto*</small><strong>R$ 129,5 mil</strong></div>
+<div class="card g1"><small>Vendas jan–ago/26</small><strong>R$ 156,9 mil</strong><span>contra R$ 206,4 mil em jan–ago/25</span></div>
+<div class="card g2"><small>Queda vs. 2025</small><strong>−24,0%</strong><span>queda estrutural, não um mês isolado</span></div>
+<div class="card g3"><small>Margem bruta</small><strong>26,3%</strong><span>melhor que os 23,0% de jan–ago/25</span></div>
+<div class="card g4"><small>Em aberto*</small><strong>R$ 142,9 mil</strong><span>inclui vencidos e compromissos futuros do relatório</span></div>
 </section>
 
 <section class="section">
-<h2>Três anos. Uma virada clara.</h2>
-<div class="grid year">
-<div class="yearbox"><b>2024</b><strong>R$ 246,2 mil</strong><span>fev–dez · negócio acelerando</span><div class="spark"><i class="s24"></i></div></div>
-<div class="yearbox"><b>2025</b><strong>R$ 300,6 mil</strong><span>melhor ano da série</span><div class="spark"><i class="s25"></i></div></div>
-<div class="yearbox"><b>2026</b><strong>R$ 156,9 mil</strong><span>jan–ago · queda generalizada</span><div class="spark"><i class="s26"></i></div></div>
+<h2>2024, 2025 e 2026 em uma linha.</h2>
+<div class="grid three">
+<div class="year"><b>2024</b><strong>R$ 246,2 mil</strong><span>fev–dez · mercado reagindo e crescendo</span><div class="bar"><i class="y24"></i></div></div>
+<div class="year"><b>2025</b><strong>R$ 300,6 mil</strong><span>melhor ano da série disponível</span><div class="bar"><i class="y25"></i></div></div>
+<div class="year"><b>2026</b><strong>R$ 156,9 mil</strong><span>jan–ago · queda forte de vendas</span><div class="bar"><i class="y26"></i></div></div>
 </div>
 </section>
 
-<section class="section truth">
-<div><div class="big">O varejo não explica tudo.</div></div>
-<div><p>Até julho/26, o consumo nos lares brasileiros cresceu <b>2,67%</b> em termos reais. Em Sergipe, o varejo também mostrou expansão em parte de 2026. Enquanto isso, o mercadinho caiu cerca de <b>24%</b> no acumulado jan–ago contra 2025.</p></div>
+<section class="section banner">
+<div class="panel dark"><h2>Crise existe.</h2><p>Em julho de 2026, o consumo nos lares brasileiros ainda acumulava alta real de 2,67%. Ao mesmo tempo, 82% das famílias estavam endividadas, a Selic seguia em 14,0% ao ano e Aracaju sentiu forte pressão no custo da alimentação. O consumidor ficou mais travado — mas o setor alimentar não parou.</p></div>
+<div class="panel light stack"><div class="mini"><strong>+2,67%</strong><p>consumo nos lares no acumulado de 2026</p></div><div class="mini"><strong>82%</strong><p>famílias endividadas em julho/26</p></div><div class="mini"><strong>14,0%</strong><p>Selic em agosto/26</p></div></div>
 </section>
 
 <section class="section">
-<h2>Então por que tanta gente sente que “abre e não vende”?</h2>
-<div class="grid market">
-<div class="m m1"><h3>O consumidor está mais cauteloso</h3><p>Em julho, 82% das famílias brasileiras tinham dívidas. Quando o orçamento está comprometido, a compra fica menor, mais planejada e mais sensível a preço.</p></div>
-<div class="m m2"><h3>Aracaju sentiu alimentação</h3><p>Em abril, a cesta básica acumulava alta de 14,8% no ano em Aracaju. Em maio, a inflação local chegou a 1,31% no mês.</p></div>
-<div class="m m3"><h3>Juro ainda está alto</h3><p>A Selic estava em 14% ao ano em agosto/26. Crédito caro não mata o consumo essencial, mas aperta a sobra para compras por impulso e reposições maiores.</p></div>
-</div>
-</section>
-
-<section class="section">
-<h2>No seu mercado, quatro coisas pesam mais.</h2>
+<h2>O que pesa mais no seu mercado.</h2>
 <div class="grid why">
-<div class="reason"><div class="num n1">1</div><h3>Concorrência de escala</h3><p>Gonzaga e Atacadão estão a cerca de 2,5 km. Eles têm preço, sortimento, horário e força de marca que um mercadinho não consegue copiar.</p></div>
-<div class="reason"><div class="num n2">2</div><h3>Margem sobe, volume cai</h3><p>Jan–ago/25: margem bruta de 23,0%. Jan–ago/26: 26,3%. Isso ajuda o lucro por venda, mas pode também refletir mix mais caro ou perda de itens de alto giro.</p></div>
-<div class="reason"><div class="num n3">3</div><h3>Caixa apertado vira ruptura</h3><p>Se falta dinheiro para repor rápido, o cliente entra, não encontra o item e passa a completar a compra em outro lugar. Esse efeito é silencioso.</p></div>
-<div class="reason"><div class="num n4">4</div><h3>Horário e conveniência</h3><p>O mercado aparece com funcionamento 8h–20h. O Gonzaga abre 6h30 e o Atacadão da região opera 24h. Conveniência também é produto.</p></div>
+<div class="whycard"><div class="dot d1">1</div><h3>Concorrência com muito mais escala</h3><p>Operações maiores vencem em preço, sortimento, horário e força de marca. Isso puxa a compra grande para fora do mercadinho.</p></div>
+<div class="whycard"><div class="dot d2">2</div><h3>Cliente mais sensível a preço</h3><p>Com orçamento apertado, a pessoa corta impulso, compara mais e compra menos por visita.</p></div>
+<div class="whycard"><div class="dot d3">3</div><h3>Margem melhor pode esconder menos giro</h3><p>A margem sobe, mas a venda cai. Isso pode indicar perda de itens de alto giro e permanência proporcional de itens com margem melhor.</p></div>
+<div class="whycard"><div class="dot d4">4</div><h3>Caixa e reposição podem estar ferindo o fluxo</h3><p>Se falta caixa para repor rápido, o cliente não encontra, completa a compra em outro lugar e vai criando outro hábito.</p></div>
 </div>
 </section>
 
-<section class="section risk">
-<h2>O ponto que exige auditoria.</h2>
-<div class="riskgrid">
-<div class="riskitem"><strong>R$ 50,3 mil</strong><span>em “Empréstimos de Sócios” em aberto nos relatórios</span></div>
-<div class="riskitem"><strong>R$ 22,5 mil</strong><span>pagos pela participação precisam ser conciliados com contrato e comprovante</span></div>
-</div>
-<div class="stamp">Isso não prova desvio. Prova que a documentação precisa fechar: quem vendeu quotas, quem recebeu, qual saldo cada sócio tem e o que efetivamente entrou no caixa da empresa.</div>
+<section class="section alert">
+<h2>O ponto mais sensível.</h2>
+<div class="split"><div class="item"><strong>R$ 50,3 mil</strong><span>em aberto na categoria “Empréstimos de Sócios”. Precisa fechar por sócio, contrato e extrato.</span></div><div class="item"><strong>R$ 22,5 mil</strong><span>da participação comprada para você precisam ser amarrados ao documento certo: compra de quotas ou aporte no caixa.</span></div></div>
+<div class="footnote">Isso não prova fraude. Prova que a governança e a documentação precisam fechar sem lacunas.</div>
 </section>
 
-<section class="verdict">
-<p>O mercadinho não está “sem mercado”. Ele está <em>perdendo disputa dentro de um mercado que continua existindo.</em> O risco maior hoje é deixar queda de fluxo, caixa e governança virarem um problema irreversível.</p>
-</section>
-
-<div class="sources">
-* “Em aberto” considera o total reportado no arquivo de contas a pagar e inclui obrigações futuras, atrasadas e outras classificações; não equivale automaticamente a dívida vencida. Fontes externas: ABRAS — Consumo nos Lares, 27/08/2026; Banco Central — Copom, 05/08/2026; DIEESE/Conab — cesta básica de Aracaju 2026; Observatório de Sergipe/IBGE; Procon Aracaju; dados públicos de estabelecimentos locais. Dados internos: relatórios enviados do sistema do mercadinho.
-</div>
+<section class="finale"><p>O mercadinho <em>não caiu só porque o Brasil apertou.</em> A crise pesa, mas a queda foi maior do que a do setor. A leitura mais provável é: <em>crise externa + problema interno</em>.</p><div class="sources">* “Em aberto” considera o total do relatório de contas a pagar, com parcelas futuras e outros compromissos. Fontes externas: ABRAS — Consumo nos Lares; Banco Central — Copom; CNC/Peic; DIEESE/Conab e Observatório de Sergipe. Dados internos: relatórios financeiros, vendas, estoque e contas a pagar enviados pelo negócio.</div></section>
 </main>
 </body>
 </html>
